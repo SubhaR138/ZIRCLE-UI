@@ -38,7 +38,7 @@
         :angle="0"
         size="s"
         :distance="120"
-        label="scenes"
+        label="ClientCountryTimings"
         label-pos="right"
         to-view="scenes">
         4
@@ -48,7 +48,7 @@
         :angle="30"
         size="s"
         :distance="120"
-        label="Rooms"
+        label="OfficeInterior"
         label-pos="right"
         to-view="rooms">
         5

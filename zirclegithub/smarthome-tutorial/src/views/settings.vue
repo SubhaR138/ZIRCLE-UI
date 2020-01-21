@@ -1,7 +1,10 @@
+<!--here we are going to include z-view running as a button-->
 <template>
   <z-view label="Settings">
   {{ theme }}
     <div slot="extension">
+      <!--here we are using button prop which will acts as a z-spot-->
+      <!--used v-for directive to render list of items into an array-->
         <z-spot
           v-for="(el, index) in elements"
           button
@@ -15,6 +18,7 @@
           :key="index"
           @click.native="changeStyle(el)"
           />
+          <!--  @click.native="changeStyle(el) this method allows the theme to be changed-->
     </div>
   </z-view>
 </template>

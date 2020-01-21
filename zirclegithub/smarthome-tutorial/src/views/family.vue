@@ -1,3 +1,4 @@
+
 <template>
 <z-view label="Leaflet | OpenStreetMap | CartoDB" ref="map">
     <div slot="media" :id="$zircle.getCurrentViewName()" style="height:100%; width: 100%;">

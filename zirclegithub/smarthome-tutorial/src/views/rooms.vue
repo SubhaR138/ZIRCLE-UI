@@ -1,6 +1,6 @@
 <template>
   <z-view>
-    Rooms
+    OfficeInterior
     <section slot="extension">
       <z-list
         :items="rooms"
@@ -61,11 +61,11 @@ export default {
   data () {
     return {
       rooms: [
-        { name: 'Living', devices: 6, image: './living.jpg' },
-        { name: 'Bedroom', devices: 2, status: 'alert' },
-        { name: 'Kitchen', devices: 5 },
-        { name: 'Studio', devices: 1 },
-        { name: 'Bath', devices: 1 }
+        { name: 'DiningHall', devices: 6, image: './living.jpg' },
+        { name: 'Meeting Hall', devices: 2, status: 'alert' },
+        { name: 'Cafeteria', devices: 5 },
+        { name: 'Working Area', devices: 1 },
+        { name: 'Parking Area', devices: 1 }
       ],
       openDialog: false
     }

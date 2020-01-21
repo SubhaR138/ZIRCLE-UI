@@ -3,7 +3,7 @@
   style="border-width: 8px"
   slider
   :progress="progress">
-    <span style="color: var(--accent-text-color)">Living room
+    <span style="color: var(--accent-text-color)">DiningHall
       <h1>{{activeScene}}</h1>
       {{msg}}
     </span>

@@ -1,6 +1,6 @@
 <template>
   <z-view
-  label="Scenes"
+  label="ClientCountryTimings"
   slider
   :progress="progress"
   :style="styleActive">
@@ -32,10 +32,10 @@ export default {
       msg: '',
       progress: 0,
       elements: [
-        { scene: 'Day', color: 'orange', icon: 'fa-sun', msg: 'Cooling rooms, blinds opened, playing ambient music' },
-        { scene: 'Night', color: 'blue', icon: 'fa-moon', msg: 'Blinds closed, AC in silence mode, motion sensors active' },
-        { scene: 'Away', color: 'white', icon: 'fa-shield-alt', msg: 'Alarm armed, cameras activated, blinds closed' },
-        { scene: 'At home', color: 'green', icon: 'fa-home', msg: 'Lights in ambient mode, playing relax music, coffee is being prepared' }
+        { scene: 'India', color: 'orange', icon: 'fa-sun', msg: '6hrs91 mins lagging than aus,10hrs leading than US,6hrs leading than UK' },
+        { scene: 'US', color: 'blue', icon: 'fa-moon', msg: '10hrs lagging than India' },
+        { scene: 'UK', color: 'white', icon: 'fa-shield-alt', msg: '6hrs lagging than India' },
+        { scene: 'Australia', color: 'green', icon: 'fa-tree', msg: '7hrs leading than India' }
       ]
     }
   },

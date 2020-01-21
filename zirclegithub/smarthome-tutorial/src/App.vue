@@ -12,7 +12,7 @@
 export default {
   components: {
     tv: () => import('./views/tv'),
-    living: () => import('./views/living'),
+    DiningHall: () => import('./views/living'),
     search: () => import('./views/search'),
     device: () => import('./views/device'),
     home: () => import('./views/home'),
