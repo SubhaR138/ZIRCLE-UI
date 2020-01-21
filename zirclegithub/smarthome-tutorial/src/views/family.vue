@@ -7,26 +7,26 @@
         :angle="-90"
         size="s"
         :style="active === 0 ? 'border-color: purple; color: purple;' : ''"
-        label="Mary"
+        label="Whitelake Technology"
         label-pos="top"
         @click.native="showMe(0, 'purple')">
-        <i class="fas fa-female"></i>
+        <i class="fas fa-home"></i>
       </z-spot>
       <z-spot button
         :angle="30"
         size="s"
-        label="John"
+        label="Nagercoil busstand"
         :style="active === 1 ? 'border-color: green; color: green;' : ''"
         @click.native="showMe(1, 'green')">
-        <i class="fas fa-male"></i>
+        <i class="fas fa-bus"></i>
       </z-spot>
       <z-spot button
         :angle="150"
         size="s"
-        label="Peter"
+        label="Railway station"
         :style="active === 2 ? 'border-color: orange; color: orange;' : ''"
         @click.native="showMe(2, 'orange')">
-        <i class="fas fa-child"></i>
+        <i class="fas fa-train"></i>
       </z-spot>
     </section>
   </z-view>
@@ -51,9 +51,9 @@ export default {
           zoom: 18
         }).addTo(this.map)
       this.markers.push(
-        L.marker([38.60, -90.20]).bindPopup("Mary at work").addTo(this.map),
-        L.marker([38.63, -90.23]).bindPopup("John at home.").addTo(this.map).openPopup(),
-        L.marker([38.66, -90.26]).bindPopup("Peter at school").addTo(this.map)
+        L.marker([38.60, -90.20]).bindPopup("located at nagercoil").addTo(this.map),
+        L.marker([38.63, -90.23]).bindPopup("1km from WLTS.").addTo(this.map).openPopup(),
+        L.marker([38.66, -90.26]).bindPopup("3kms from WLTS").addTo(this.map)
       )
       this.active = 1
       this.showMe(1, 'green')

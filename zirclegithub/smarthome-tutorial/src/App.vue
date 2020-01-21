@@ -21,7 +21,7 @@ export default {
     devices: () => import('./views/devices'),
     status: () => import('./views/status'),
     scenes: () => import('./views/scenes'),
-    family: () => import('./views/family'),
+    location: () => import('./views/family'),
     logs: () => import('./views/logs')
   },
   mounted () {

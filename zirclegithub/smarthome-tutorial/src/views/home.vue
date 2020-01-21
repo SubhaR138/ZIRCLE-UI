@@ -1,5 +1,6 @@
 <!--This is the initial view of our app-->
 <template>
+<!--always we need to define z-view as the main comp-->
   <z-view>
      ISO 9001:2008
     <br>
@@ -10,6 +11,7 @@
     <br>
    WhiteLake Technology Solutions
     <div slot="extension">
+      <!--we use slot.extension in this we can put several z-spots-->
       <!-- status monitor -->
       <z-spot
         style="background-color: green; border-width: 4px; border-color: var(--background-color);"
@@ -17,17 +19,18 @@
         size="m"
         :distance="120"
         to-view="status">
+        <!--toiView prop allow us to go to another view-->
         <i style="color: var( --accent-text-color)" class="fas fa-bell"></i><br>
         <span style="color: var( --accent-text-color)">15</span>
       </z-spot>
-      <!-- family-->
+      <!-- location-->
       <z-spot
         :angle="-30"
         size="s"
         :distance="120"
-        label="family"
+        label="location"
         label-pos="right"
-        to-view="family">
+        to-view="location">
         <i class="fas fa-map-marker-alt"></i>
       </z-spot>
       <!-- scenes-->
