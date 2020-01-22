@@ -31,7 +31,8 @@ export default {
         { type: 'theme', angle: -50, label: 'blue', labelPos: 'right' },
         { type: 'theme', angle: -30, label: 'black', labelPos: 'right' },
         { type: 'theme', angle: -10, label: 'green', labelPos: 'right' },
-        { type: 'theme', angle: 10, label: 'red', labelPos: 'right' },
+        { type: 'theme', angle: 10, label: 'purple', labelPos: 'right' },
+        { type: 'theme', angle: -70, label: 'yellow', labelPos: 'right' },
         { type: 'theme', angle: 30, label: 'light-blue', labelPos: 'right' },
         { type: 'theme', angle: 50, label: 'gray', labelPos: 'right' },
         { type: 'mode', angle: 210, label: 'dark', labelPos: 'left' },
@@ -53,3 +54,15 @@ export default {
   }
 }
 </script>
+<style>
+.theme-yellow{
+  --shade-color: #fffcf2;
+  --primary-color: #ffca26;
+  --accent-color: #8c6a00;
+}
+.theme-purple{
+  --shade-color: #141414;/*defines the border color*/
+  --primary-color: #ee305a;/*defines the color of the structure*/
+  --accent-color: #7b0a23;/*defines the selected button color*/
+}
+</style>
