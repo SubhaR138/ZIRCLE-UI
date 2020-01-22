@@ -20,6 +20,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
+Go the project folder and run the following comment
 npm run serve
 ```
 
