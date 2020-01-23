@@ -31,7 +31,8 @@ export default {
         { type: 'theme', angle: -50, label: 'blue', labelPos: 'right' },
         { type: 'theme', angle: -30, label: 'black', labelPos: 'right' },
         { type: 'theme', angle: -10, label: 'green', labelPos: 'right' },
-        { type: 'theme', angle: 10, label: 'purple', labelPos: 'right' },
+        { type: 'theme', angle: 10,  label: 'purple', labelPos: 'right' },
+        { type: 'theme', angle:70,   label:'orange', labelPos: 'right' },
         { type: 'theme', angle: -70, label: 'yellow', labelPos: 'right' },
         { type: 'theme', angle: 30, label: 'light-blue', labelPos: 'right' },
         { type: 'theme', angle: 50, label: 'gray', labelPos: 'right' },
@@ -64,5 +65,10 @@ export default {
   --shade-color: #141414;/*defines the border color*/
   --primary-color: #ee305a;/*defines the color of the structure*/
   --accent-color: #7b0a23;/*defines the selected button color*/
+}
+.theme-orange{
+  --shade-color: #fff8f3;
+  --primary-color: #f7892f;
+  --accent-color: #884005;
 }
 </style>

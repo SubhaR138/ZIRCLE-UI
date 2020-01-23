@@ -2,14 +2,10 @@
 <template>
 <!--always we need to define z-view as the main comp-->
   <z-view>
-     ISO 9001:2008
-    <br>
-   company existing since 2002..
-    <br>
-   <br>
-   Welcome to
-    <br>
-   WhiteLake Technology Solutions 
+    <!--iframe is an inline frame used to embed another document with the current html doc
+      accelerometer is used in mobile phoneds to determine the phone's orientation
+      gyroscope adds the additional dimension to the information supplied by the accelerometer-->
+ <iframe slot="media" width="600" height="300" src="https://www.youtube.com/embed/oZikw5k_2FM" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div slot="extension">
       <!--we use slot.extension in this we can put several z-spots-->
       <!-- status monitor -->
