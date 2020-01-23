@@ -33,7 +33,7 @@ export default {
       },
       debug: true
     })
-    //here we set the zircleview home because this is the initial view
+    //  here we set the zircleview home because this is the initial view
     this.$zircle.setView('home')
   }
 }

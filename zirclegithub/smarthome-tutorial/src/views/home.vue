@@ -9,7 +9,7 @@
    <br>
    Welcome to
     <br>
-   WhiteLake Technology Solutions
+   WhiteLake Technology Solutions 
     <div slot="extension">
       <!--we use slot.extension in this we can put several z-spots-->
       <!-- status monitor -->
@@ -70,7 +70,7 @@
         size="s"
         label="Settings"
         to-view="settings">
-        <i class="fas fa-sliders-h"></i>
+        <i class="fas fa-cog fa-spin"></i>
       </z-spot>
     </div>
   </z-view>

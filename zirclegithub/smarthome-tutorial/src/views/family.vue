@@ -11,7 +11,7 @@
         label="Whitelake Technology"
         label-pos="top"
         @click.native="showMe(0, 'purple')">
-        <i class="fas fa-home"></i>
+        <i class="fas fa-building"></i>
       </z-spot>
       <z-spot button
         :angle="30"
@@ -38,7 +38,7 @@ import L from 'leaflet'
 export default {
   data () {
     return {
-      map: null,
+      map : null,
       markers: [],
       active: ''
     }
@@ -65,9 +65,11 @@ export default {
       this.active = index
       this.$refs.map.$el.style.borderColor = color
     }
+    
   },
   mounted () {
-    this.initMap()
+    this.initMap();
+    tis.initMarkers();
   }
 }
 </script>

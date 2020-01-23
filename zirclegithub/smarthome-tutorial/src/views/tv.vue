@@ -1,6 +1,10 @@
 <template>
   <z-view>
-    <iframe slot="media" width="100%" height="100%" src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allowfullscreen></iframe>
+    <!--we must ensure that the URL contains "embed" rather than "watch" -->
+    <!--"embed" endpoint allows outside requests and "watch" does not-->
+    <!--https://www.youtube.com/watch?v=on3Ai6vp_xI&t=4s-->
+    <iframe slot="media" width="853" height="480" src="https://www.youtube.com/embed/on3Ai6vp_xI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe  width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
      Channel 9
 
           <div slot="extension">
