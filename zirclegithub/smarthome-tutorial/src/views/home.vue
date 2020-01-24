@@ -5,7 +5,7 @@
     <!--iframe is an inline frame used to embed another document with the current html doc
       accelerometer is used in mobile phoneds to determine the phone's orientation
       gyroscope adds the additional dimension to the information supplied by the accelerometer-->
- <img src="tf.jpg" alt="Tensorflow" height="407" width="407">
+ <img src="tf.jpg" alt="Tensorflow" height="412" width="407">
     <div slot="extension">
       <!--we use slot.extension in this we can put several z-spots-->
       <!-- status monitor -->
@@ -21,8 +21,7 @@
         <span style="color: var( --accent-text-color)">15</span>
       </z-spot>
       <!-- location-->
-      <z-spot 
-        :angle="-30"
+      <z-spot :angle="-30"
         size="s"
         :distance="120"
         label="location"
@@ -43,8 +42,7 @@
          4
       </z-spot>
       <!-- rooms-->
-      <z-spot 
-        :angle="30"
+      <z-spot :angle="30"
         size="s"
         :distance="120"
         label="OfficeInterior"
@@ -81,6 +79,22 @@
         to-view="acheievements">
      <i class="fa fa-trophy"></i>
       </z-spot>
+      <z-spot class="circle" size="s" :angle="-65" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ' :distance="150"></z-spot>
+      <z-spot class="circle" size="s" :angle="-130" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ' :distance="165"></z-spot>
+      <z-spot class="circle" size="s" :angle="169" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ' :distance="150"></z-spot>
+      <z-spot class="circle" size="s" :angle="33" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ' :distance="155"></z-spot>
+      <z-spot class="circle" size="s" :angle="-47" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ' :distance="180"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white ' size=xs :distance="185" :angle="160"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white ' size=s :distance="130" :angle="-110"> </z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white ' size=s :distance="150" :angle="84"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white ' size=xs :distance="148" :angle="10"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white' size=xs :distance=160 :angle="110"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 1px;  border-color:white' size=xxs :distance=148 :angle="54"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 1px;  border-color:white' size=xxs :distance=122 :angle="113"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 1px;  border-color:white' size=xxs :distance=132 :angle="200"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 1px;  border-color:white' size=xxs :distance=132 :angle="-82"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white' size=xs :distance=190 :angle="-160"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white' size=xs :distance=190 :angle="130"></z-spot>
       </div>
     </div>
   </z-view>
