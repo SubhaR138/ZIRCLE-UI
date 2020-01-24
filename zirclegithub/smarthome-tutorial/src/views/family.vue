@@ -45,22 +45,22 @@ export default {
   },
   methods: {
     initMap () {
-      this.map = L.map(this.$zircle.getCurrentViewName(), {attributionControl: false, zoomControl: false}).setView([38.63, -90.23], 14)
+      this.map = L.map(this.$zircle.getCurrentViewName(), {attributionControl: false, zoomControl: false}).setView([8.181864, 77.4306441], 16)
       L.tileLayer(
         'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
         { 
           zoom: 18
         }).addTo(this.map)
       this.markers.push(
-        L.marker([38.60, -90.20]).bindPopup("located at nagercoil").addTo(this.map),
-        L.marker([38.63, -90.23]).bindPopup("1km from WLTS.").addTo(this.map).openPopup(),
-        L.marker([38.66, -90.26]).bindPopup("3kms from WLTS").addTo(this.map)
+        L.marker([8.181872, 77.430860]).bindPopup("located at nagercoil").addTo(this.map),
+        L.marker([8.1816, 77.4341]).bindPopup("1km from WLTS.").addTo(this.map).openPopup(),
+        L.marker([8.1746, 77.4439]).bindPopup("3kms from WLTS").addTo(this.map)
       )
       this.active = 1
       this.showMe(1, 'green')
     },
     showMe (index, color) {
-      this.map.panTo(this.markers[index].getLatLng())
+      this.map.flyTo(this.markers[index].getLatLng())
       this.markers[index].openPopup()
       this.active = index
       this.$refs.map.$el.style.borderColor = color

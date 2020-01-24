@@ -5,10 +5,11 @@
     <!--iframe is an inline frame used to embed another document with the current html doc
       accelerometer is used in mobile phoneds to determine the phone's orientation
       gyroscope adds the additional dimension to the information supplied by the accelerometer-->
- <iframe slot="media" width="600" height="300" src="https://www.youtube.com/embed/oZikw5k_2FM" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <img src="tf.jpg" alt="Tensorflow" height="407" width="407">
     <div slot="extension">
       <!--we use slot.extension in this we can put several z-spots-->
       <!-- status monitor -->
+      <div class="style1">
       <z-spot
         style="background-color: green; border-width: 4px; border-color: var(--background-color);"
         :angle="-145"
@@ -20,7 +21,7 @@
         <span style="color: var( --accent-text-color)">15</span>
       </z-spot>
       <!-- location-->
-      <z-spot
+      <z-spot 
         :angle="-30"
         size="s"
         :distance="120"
@@ -36,11 +37,13 @@
         :distance="120"
         label="ClientCountryTimings"
         label-pos="right"
-        to-view="scenes">
-        4
+        to-view="scenes"
+        >
+        <i class="fa fa-hourglass-2"></i>
+         4
       </z-spot>
       <!-- rooms-->
-      <z-spot
+      <z-spot 
         :angle="30"
         size="s"
         :distance="120"
@@ -68,6 +71,23 @@
         to-view="settings">
         <i class="fas fa-cog fa-spin"></i>
       </z-spot>
+      <!--achievements-->
+       <z-spot
+        :angle="-60"
+        size="s"
+        :distance="120"
+        label="achievements"
+        label-pos="right"
+        to-view="acheievements">
+     <i class="fa fa-trophy"></i>
+      </z-spot>
+      </div>
     </div>
   </z-view>
 </template>
+<style>
+.style1{
+  font-family: snap ITC;
+  }
+
+</style>
