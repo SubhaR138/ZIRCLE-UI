@@ -1,6 +1,5 @@
 <template>
-  <z-view
-  label="ClientCountryTimings"
+  <z-view label="ClientCountryTimings"
   slider
   :progress="progress"
   :style="styleActive">

@@ -5,10 +5,11 @@
 </template>
 <script>
 // TO SET UP VUE-ROUTER UNCOMMENT THE FOLLOWING LINES
-// import Vue from 'vue'
-// import Router from 'vue-router'
-// Vue.use(Router)
-// const router = new Router()
+import Vue from 'vue'
+import Router from 'vue-router'
+Vue.use(Router)
+const router = new Router()
+
 export default {
   components: {
     tv: () => import('./views/tv'),
@@ -22,7 +23,8 @@ export default {
     status: () => import('./views/status'),
     scenes: () => import('./views/scenes'),
     location: () => import('./views/family'),
-    logs: () => import('./views/logs')
+    logs: () => import('./views/logs'),
+    aboutus: () => import('./views/aboutus')
   },
   mounted () {
     this.$zircle.config({

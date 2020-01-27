@@ -1,123 +1,74 @@
 <template>
-  <z-view
-  style="border-width: 8px"
-  slider
-  :progress="progress">
-    <span style="color: var(--accent-text-color)">DiningHall
-      <h1>{{activeScene}}</h1>
-      {{msg}}
-    </span>
-    <img slot="image" src="living.jpg" width="100%" height="100%" style="opacity: 0.3">
-    <div slot="extension">
+ <z-view>
+    aboutus
+    <section slot="extension">
+      <z-list
+        :items="rooms"
+        :per-page="3">
+          <z-spot
+            :distance="60"
+            slot-scope="props"
+            :index="props.index"
+            :to-view="props.name"
+            :label="props.name"
+            :image-path="props.image"
+            label-pos="bottom">
+            <z-spot slot="extension"
+              v-if="props.status"
+              style="background-color: red; border: none;"
+              :angle='-45'
+              size='xxs'>
+            </z-spot>
+          </z-spot>
+      </z-list>
       <z-spot
-        v-for="(device, index) in devices"
-        :button="device.name !== 'AC'"
-        :knob="device.name === 'AC'"
-        v-bind.sync="device.temp"
-        :angle="1 + (180 / (devices.length - 1) * index)"
-        :distance="100"
-        size="m"
-        :to-view="device.view"
-        :label="device.name"
-        :key="'dev_' + index">
-        <i :class="device.icon"></i>
-        <z-spot slot="extension"
-          button
-          :angle="-45"
-          size="xxs"
-          :style="device.state === 'on' ? 'border-color: green; background-color: green;' : 'border-color: red; background-color: red;'">
-        </z-spot>
-      </z-spot>
-      <z-spot
-        v-for="(scene, index) in scenes"
         button
+        :angle="45"
         size="s"
-        :angle="225 + (90 / (scenes.length - 1) * index)"
-        :distance="125"
-        :label="scene.name"
-        label-pos="top"
-        :key="'scn_' + index"
-        @click.native="showMe(scene.name)">
-        <i :class="scene.icon"></i>
+        :distance="120"
+        label="Add"
+        @click.native="openDialog = true">
+          <i class="fas fa-plus"></i>
       </z-spot>
-    </div>
-  </z-view>
+      <z-dialog v-if="openDialog" self-close v-on:done="openDialog = false">
+        Add a new room?
+        <div slot=extension>
+          <z-spot
+          class="success"
+          button
+          :angle="45"
+          size="s"
+          :distance="120"
+          @click.native="openDialog = false">
+            <i class="fas fa-check"></i>
+          </z-spot>
+          <z-spot
+          class="danger"
+          button
+          :angle="135"
+          size="s"
+          :distance="120"
+          @click.native="openDialog = false">
+            <i class="fas fa-times"></i>
+          </z-spot>
+        </div>
+      </z-dialog>
+    </section>
+</z-view>
 </template>
 <script>
-/*eslint-disable*/
 export default {
   data () {
     return {
-      progress: 0,
-      msg: '',
-      activeScene: '',
-      devices: [],
-      scenes: [
-        {name: 'Relax', state: 'active', icon: 'fas fa-book'},
-        {name: 'Theatre', state: 'deactive', icon: 'fas fa-film'},
-        {name: 'Party', state: 'deactive', icon: 'fas fa-birthday-cake'}
-      ]
+      rooms: [
+        { name: 'DiningHall', devices: 6, image: './living.jpg' },
+        { name: 'Meeting Hall', devices: 2, status: 'alert' },
+        { name: 'Cafeteria', devices: 5 },
+        { name: 'Working Area', devices: 1 },
+        { name: 'Parking Area', devices: 1 }
+      ],
+      openDialog: false
     }
-  },
-  computed: {
-    retrieveParams () {
-      if (this.$zircle.getParams() !== undefined) {
-        return this.$zircle.getParams().room
-      }
-    }
-  },
-  methods: {
-    log (data) {
-      console.log(data)
-    },
-    showMe (scene) {
-      if (this.activeScene !== scene) {
-        this.progress = 5
-        this.activeScene = scene
-        this.msg = 'Activating devices...'
-        var vm = this
-        var id = setInterval(function () {
-          if (vm.progress >= 100) {
-            clearInterval(id)
-            vm.progress = 0
-            vm.msg = scene.msg
-          } else if (vm.progress === 40) { 
-            vm.msg = 'Applying rules...'
-            if (scene === 'Relax') {
-              vm.devices = [
-                {name: 'AC', state: 'on', temp: {qty: 24, unit: '˚C', min: 18, max: 32}},
-                {name: 'TV', state: 'off', vol: 14, bright: 30, source: 'youtube', icon: 'fas fa-tv', view: 'tv'},
-                {name: 'Hifi', state: 'on', vol: 14, icon: 'fas fa-music'},
-                {name: 'Ambient light', state: 'off', icon: 'far fa-lightbulb'}
-              ]
-            } else if (scene === 'Theatre') {
-              vm.devices = [
-                {name: 'AC', state: 'on', temp: {qty: 18, unit: '˚C', min: 18, max: 32}},
-                {name: 'TV', state: 'on', vol: 14, bright: 30, source: 'youtube', icon: 'fas fa-tv', view: 'tv'},
-                {name: 'Hifi', state: 'off', vol: 14, icon: 'fas fa-music'},
-                {name: 'Ambient light', state: 'off', icon: 'far fa-lightbulb'}
-              ]
-            } else if (scene === 'Party') {
-              vm.devices = [
-                {name: 'AC', state: 'on', temp: {qty: 20, unit: '˚C', min: 18, max: 32}},
-                {name: 'TV', state: 'off', vol: 14, bright: 30, source: 'youtube', icon: 'fas fa-tv', view: 'tv'},
-                {name: 'Hifi', state: 'on', vol: 14, icon: 'fas fa-music'},
-                {name: 'Ambient light', state: 'on', icon: 'far fa-lightbulb'}
-              ]
-            }
-            vm.progress ++
-          } else {
-            vm.progress ++
-          }
-        }, 20)
-      } else {
-        this.msg = 'This scene is already activated'
-      }
-    }
-  },
-  created () {
-    this.showMe('Relax')
   }
 }
 </script>
-
