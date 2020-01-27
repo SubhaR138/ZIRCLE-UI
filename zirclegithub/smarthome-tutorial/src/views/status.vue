@@ -1,14 +1,14 @@
 <template>
-  <z-view label="Home status" style="background-color: black">
+  <z-view label="Working hours status" style="background-color: black">
   <canvas slot="media" id="smoothie-chart" style="height:50%; width: inherit;"></canvas>
   <div slot="extension">
          <z-spot
           :angle="-45"
           size="m"
           :distance="120"
-          label="Events"
+          label="Work-Timing"
           to-view="logs">
-          15
+          6
         </z-spot>
     </div>
   </z-view>

@@ -48,21 +48,13 @@ export default {
     return {
       openDialog: false,
       console: [
-        '12:30pm - Mary arrived home',
-        '12:34pm - Peter arrived home',
-        '1:30pm - Relax scene activated',
-        '1:50pm - Peter arrived home',
-        '4:00pm - Away scene activated',
-        '5:10pm - Movement detected',
-        '5:10pm - Video alert sent to Peter',
-        '6:00pm - At Home scene activated',
-        '6:01pm - Ambient lights turned on',
-        '6:01pm - Playing Mary music list',
-        '6:15pm - Problem with camera device',
-        '6:16pm - Camera is working after reset',
-        '6:45pm - Ambient lights turned off',
-        '7:01pm - Theatre turned on',
-        '8:00pm - Night scene activaded'
+        'Hours: Monday	9am–6pm',
+        'Tuesday	9am–6pm',
+        'Wednesday	9am–6pm',
+        'Thursday	9am–6pm',
+        'Friday	9am–6pm',
+        'Saturday	9am–6pm',
+        
       ]
     }
   },

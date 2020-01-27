@@ -1,7 +1,10 @@
 <template>
+
+   
 <!--all the zircle ui components will bve rendered inside the z-canvas-->
 <!--z-canvas has on prop called view where we put all our vies inside-->
   <z-canvas :views='$options.components'></z-canvas>
+  
 </template>
 <script>
 // TO SET UP VUE-ROUTER UNCOMMENT THE FOLLOWING LINES
@@ -24,7 +27,9 @@ export default {
     scenes: () => import('./views/scenes'),
     location: () => import('./views/family'),
     logs: () => import('./views/logs'),
-    aboutus: () => import('./views/aboutus')
+    aboutus: () => import('./views/aboutus'),
+    achievements: () => import('./views/achievements'),
+    services: ()=> import('./views/services')
   },
   mounted () {
     this.$zircle.config({

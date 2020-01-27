@@ -1,6 +1,6 @@
 <template>
-  <z-view>
-    OfficeInterior
+ <z-view>
+   interior
     <section slot="extension">
       <z-list
         :items="rooms"

@@ -7,8 +7,8 @@ WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned compa
 <h6 class="fa fa-envelope">info@whitelake.in</h6>
 </div>
     <div slot="extension">
-        <z-spot button class="butt2" size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="other services" :distance="120" :angle="135" @click.native="toLink(info.url)">
-            <i class="fab fa-facebook"></i>
+        <z-spot size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="Our details" :distance="120" :angle="135" to-view="services">
+            <i class="fa fa-info-circle"></i>
         </z-spot>
         <z-spot button class="butt2" size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="other services" :distance="120" :angle="45" @click.native="toLink('https://www.whitelake.in/')">
             <i class="fa fa-briefcase"></i>
@@ -24,29 +24,13 @@ export default {
     return {
       info: {},
       activePage: true,
-      startX: {}
     }
   },
   methods: {
     toLink (url) {
       return window.open(url, '_blank')
     },
-    getZircle () {
-      return axios.get('').then(
-        function (response) {
-          return {
-            url: response.data.html_url
-          }
-        }
-      )
-    }
-  },
-  computed: {},
-  mounted () {
-    var vm = this
-    this.getZircle().then(function (e) {
-      vm.info = e
-    })
+  
   }
 }
 </script>

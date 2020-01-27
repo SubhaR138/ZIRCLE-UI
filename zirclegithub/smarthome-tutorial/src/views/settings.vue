@@ -71,4 +71,9 @@ export default {
   --primary-color: #f7892f;
   --accent-color: #884005;
 }
+.theme-black{
+  --shade-color: #f1880f;
+  --primary-color: #283237;
+  --accent-color: #000;
+}
 </style>
