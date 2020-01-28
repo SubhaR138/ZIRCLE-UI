@@ -38,8 +38,7 @@
         label-pos="right"
         to-view="scenes"
         >
-        <i class="fa fa-hourglass-2"></i>
-         4
+       <i class="	fas fa-clock"></i>
       </z-spot>
       <!-- rooms-->
       <z-spot :angle="30"
@@ -48,17 +47,17 @@
         label="OfficeInterior"
         label-pos="right"
         to-view="rooms">
-        5
+      <i class="fas fa-building"></i>
       </z-spot>
       <!-- devices-->
       <z-spot
-        :angle="60"
+        :angle="-60"
         :distance="120"
         size="s"
-        label="Devices"
+        label="Achievements"
         label-pos="right"
         to-view="devices">
-        45
+        <i class="fa fa-trophy"></i>
       </z-spot>
       <!-- settings-->
       <z-spot
@@ -68,16 +67,6 @@
         label="Settings"
         to-view="settings">
         <i class="fas fa-cog fa-spin"></i>
-      </z-spot>
-      <!--achievements-->
-       <z-spot
-        :angle="-60"
-        size="s"
-        :distance="120"
-        label="achievements"
-        label-pos="right"
-        to-view="acheievements">
-     <i class="fa fa-trophy"></i>
       </z-spot>
       <!--about us-->
       <z-spot

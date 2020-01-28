@@ -1,7 +1,6 @@
 <template>
 <z-view size=xxl style="background-color: black; border-width: 7px">
-WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned company 
-<div v-if="activePage" style="position: absolute; left: 0; bottom: 0; z-index: 90;font-weight: 300; padding-top: 10px;padding-bottom: 50px;background-color: var(--shade-color); color: var(--accent-color); margin: 0; height: 20%; width: 100%;">
+WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned company <div v-if="activePage" style="position: absolute; left: 0; bottom: 0; z-index: 90;font-weight: 300; padding-top: 10px;padding-bottom: 50px;background-color: var(--shade-color); color: var(--accent-color); margin: 0; height: 20%; width: 100%;">
 <h6 class="fa fa-phone">+91-4652-230776</h6>
 <br>
 <h6 class="fa fa-envelope">info@whitelake.in</h6>
@@ -10,7 +9,7 @@ WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned compa
         <z-spot size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="Our details" :distance="120" :angle="135" to-view="services">
             <i class="fa fa-info-circle"></i>
         </z-spot>
-        <z-spot button class="butt2" size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="other services" :distance="120" :angle="45" @click.native="toLink('https://www.whitelake.in/')">
+        <z-spot button class="butt2" size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="other services" :distance="120" :angle="45" @click.native="toLink('https://www.whitelake.in/')" to-view="services">
             <i class="fa fa-briefcase"></i>
         </z-spot>
     </div>
@@ -18,19 +17,17 @@ WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned compa
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   data () {
     return {
       info: {},
-      activePage: true,
+      activePage: true
     }
   },
   methods: {
     toLink (url) {
       return window.open(url, '_blank')
-    },
-  
+    }
   }
 }
 </script>
