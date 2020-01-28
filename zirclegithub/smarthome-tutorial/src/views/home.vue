@@ -36,9 +36,8 @@
         :distance="120"
         label="ClientCountryTimings"
         label-pos="right"
-        to-view="scenes"
-        >
-       <i class="	fas fa-clock"></i>
+        to-view="scenes">
+       <i class="fas fa-clock"></i>
       </z-spot>
       <!-- rooms-->
       <z-spot :angle="30"
@@ -120,5 +119,6 @@
 <style>
 .style1{
   font-family: snap ITC;
+  color:#f5f3f1;
   }
   </style>

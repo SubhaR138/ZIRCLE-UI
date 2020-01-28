@@ -73,7 +73,7 @@ export default {
 }
 .theme-black{
   --shade-color: #f1880f;
-  --primary-color: #283237;
+  --primary-color: #00070a;
   --accent-color: #000;
 }
 </style>

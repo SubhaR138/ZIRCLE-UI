@@ -1,10 +1,7 @@
 <template>
-
-   
 <!--all the zircle ui components will bve rendered inside the z-canvas-->
 <!--z-canvas has on prop called view where we put all our vies inside-->
-  <z-canvas :views='$options.components'></z-canvas>
-  
+<z-canvas :views='$options.components'></z-canvas>
 </template>
 <script>
 // TO SET UP VUE-ROUTER UNCOMMENT THE FOLLOWING LINES
@@ -28,15 +25,14 @@ export default {
     location: () => import('./views/family'),
     logs: () => import('./views/logs'),
     aboutus: () => import('./views/aboutus'),
-    achievements: () => import('./views/achievements'),
-    services: ()=> import('./views/services')
+    services: () => import('./views/services')
   },
   mounted () {
     this.$zircle.config({
       mode: 'full',
       style: {
-        theme: 'black',
-        mode: 'dark'
+        theme: 'github'
+       
       },
       debug: true
     })
@@ -46,6 +42,11 @@ export default {
 }
 </script>
 <style>
+.theme-github {
+    --shade-color: #f1880f;
+    --primary-color: #0f0f0f;
+    --accent-color: #0f0f0f;
+}
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 </style>
