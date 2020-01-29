@@ -1,7 +1,9 @@
 <!--here we are going to include z-view running as a button-->
 <template>
   <z-view label="Settings">
+    <h3 style="color:black;">Your theme:</h3>
   {{ theme }}
+   <img slot="image" src="theme.jpg" width="100%" height="100%" style="opacity: 1">
     <div slot="extension">
       <!--here we are using button prop which will acts as a z-spot-->
       <!--used v-for directive to render list of items into an array-->
@@ -26,7 +28,7 @@
 export default {
   data () {
     return {
-      theme: 'Select your theme',
+      theme:'',
       elements: [
         { type: 'theme', angle: -50, label: 'blue', labelPos: 'right' },
         { type: 'theme', angle: -30, label: 'black', labelPos: 'right' },
@@ -41,6 +43,7 @@ export default {
         { type: 'mode', angle: 170, label: 'light', labelPos: 'left' },
         { type: 'mode', angle: 150, label: 'light-filled', labelPos: 'left' }
       ]
+      
     }
   },
   methods: {
@@ -50,7 +53,7 @@ export default {
         : this.$zircle.config({ style: { mode: el.label } })
       var theme = this.$zircle.getTheme().split('theme-')[1]
       var mode = this.$zircle.getThemeMode().split('mode-')[1]
-      this.theme = `The theme is ${theme} ${mode}`
+      this.theme = ` ${theme} ${mode}`
     }
   }
 }
@@ -73,7 +76,10 @@ export default {
 }
 .theme-black{
   --shade-color: #f1880f;
-  --primary-color: #00070a;
+  --primary-color: #283237;
   --accent-color: #000;
+}
+.theme-Select your theme{
+  color:black;
 }
 </style>

@@ -4,6 +4,7 @@
   :progress="progress"
   :style="styleActive">
   <h1>{{activeScene}}</h1>
+  
   <div style="height: 60px;">
     {{msg}}
   </div>
@@ -26,7 +27,7 @@
 export default {
   data () {
     return {
-      activeScene: 'Night',
+      activeScene: 'US',
       color: 'blue',
       msg: '',
       progress: 0,

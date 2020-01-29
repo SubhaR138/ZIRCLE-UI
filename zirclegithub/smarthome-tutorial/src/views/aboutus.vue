@@ -1,6 +1,8 @@
 <template>
 <z-view size=xxl style="background-color: black; border-width: 7px">
-WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned company <div v-if="activePage" style="position: absolute; left: 0; bottom: 0; z-index: 90;font-weight: 300; padding-top: 10px;padding-bottom: 50px;background-color: var(--shade-color); color: var(--accent-color); margin: 0; height: 20%; width: 100%;">
+   <img slot="image" src="neuron.gif" width="100%" height="100%" style="opacity: 1">
+<h3 style="color:white">WhiteLake Technology Solutions is an ISO 9001:2008 certified private owned company</h3>
+ <div v-if="activePage" style="position: absolute; left: 0; bottom: 0; z-index: 90;font-weight: 300; padding-top: 10px;padding-bottom: 50px;background-color: var(--shade-color); color: var(--accent-color); margin: 0; height: 20%; width: 100%;">
 <h6 class="fa fa-phone">+91-4652-230776</h6>
 <br>
 <h6 class="fa fa-envelope">info@whitelake.in</h6>

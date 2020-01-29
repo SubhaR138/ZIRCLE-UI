@@ -1,9 +1,8 @@
 <template>
 <z-view size=xxl style="background-color: black; border-width: 7px">
-
     <section slot="extension">
         <z-spot size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="face-recognition" :distance="50" :angle="-95" to-view="device">
-           <img slot="image" src="facenet.jpg" width="100%" height="100%" style="opacity: 1">
+           <img slot="image" src="face.jpg" width="100%" height="100%" style="opacity: 1">
         </z-spot>
         <z-spot button class="butt2" size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="Tensorflow" :distance="50" :angle="0" @click.native="toLink('https://youtu.be/LbIzWp8JliY')">
            <img slot="image" src="tflogo.png" width="100%" height="100%" style="opacity: 1">
@@ -12,7 +11,7 @@
             <i class="fa fa-briefcase"></i>
         </z-spot>
         <z-spot button class="butt2" size=s style="font-size: 25px;color: white; border-color:var(--shade-color);background-color: var(--shade-color);" label="Future projects" :distance="50" :angle="180" @click.native="toLink('')">
-            <i class="fa fa-briefcase"></i>
+             <img slot="image" src="facenet.jpg" width="100%" height="100%" style="opacity: 1">
         </z-spot>
     </section>
 </z-view>

@@ -24,12 +24,12 @@
       <z-spot :angle="-30"
         size="s"
         :distance="120"
-        label="location"
+        label="Location"
         label-pos="right"
         to-view="location">
-        <i class="fas fa-map-marker-alt"></i>
+       <img slot="image" src="map.gif" width="100%" height="100%" style="opacity: 1">
       </z-spot>
-      <!-- scenes-->
+      <!-- ClientCountryTimings-->
       <z-spot
         :angle="0"
         size="s"
@@ -37,7 +37,7 @@
         label="ClientCountryTimings"
         label-pos="right"
         to-view="scenes">
-       <i class="fas fa-clock"></i>
+       <img slot="image" src="digital.gif" width="100%" height="100%" style="opacity: 1">
       </z-spot>
       <!-- rooms-->
       <z-spot :angle="30"
@@ -46,9 +46,9 @@
         label="OfficeInterior"
         label-pos="right"
         to-view="rooms">
-      <i class="fas fa-building"></i>
+      <img slot="image" src="interior.gif" width="100%" height="100%" style="opacity: 1">
       </z-spot>
-      <!-- devices-->
+      <!-- Achievements-->
       <z-spot
         :angle="-60"
         :distance="120"
@@ -56,7 +56,7 @@
         label="Achievements"
         label-pos="right"
         to-view="devices">
-        <i class="fa fa-trophy"></i>
+        <img slot="image" src="goal.gif" width="100%" height="100%" style="opacity: 1">
       </z-spot>
       <!-- settings-->
       <z-spot
@@ -65,7 +65,7 @@
         size="s"
         label="Settings"
         to-view="settings">
-        <i class="fas fa-cog fa-spin"></i>
+        <i class="fas fa-cog fa-spin" style="color:#0b35c2;"></i>
       </z-spot>
       <!--about us-->
       <z-spot
@@ -75,43 +75,43 @@
         label="aboutus"
         label-pos="top"
         to-view="aboutus">
-       <i class="fa fa-question"></i>
+        <img slot="image" src="neuron.gif" width="100%" height="100%" style="opacity: 1">
       </z-spot>
-      <z-spot class="circle" size="xxs" :angle="-10" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"></z-spot>
-      <z-spot class="circle" size="xxs" :angle="-20" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"></z-spot>
-      <z-spot class="circle" size="xxs" :angle="-30" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"></z-spot>
-      <z-spot class="circle" size="xxs" :angle="-40" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"></z-spot>
-      <z-spot class="circle" size="xxs" :angle="-50" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ;' :distance="150"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-60"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-70"> </z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-80"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-90"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-100"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-110"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-120"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-130"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-140"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-150"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-160"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-170"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-180"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-190"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-200"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-210"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-220"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-230"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-240"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="10"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="20"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="30"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="40"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="50"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="60"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="70"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="80"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="90"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="100"></z-spot>
-      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="110"></z-spot>
+      <z-spot class="circle" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ;' size="xxs" :angle="-10"  :distance="150"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" size="xxs" :angle="-20" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" size="xxs" :angle="-30" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" size="xxs" :angle="-40" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ; ' :distance="150"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" size="xxs" :angle="-50" style=' background-color: var(--shade-color);border-width: 3px;  border-color:white ;' :distance="150"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-60"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-70"> <img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-80"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance="150" :angle="-90"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-100"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-110"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-120"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-130"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-140"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-150"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width: 3px;  border-color:white;' size=xxs :distance=150 :angle="-160"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-170"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-180"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-190"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-200"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-210"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-220"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-230"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="-240"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="10"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="20"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="30"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="40"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="50"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="60"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="70"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="80"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="90"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="100"><img slot="image" src="neuron.gif"></z-spot>
+      <z-spot class="circle" style='background-color: var(--shade-color);border-width:3px;  border-color:white;' size=xxs :distance=150 :angle="110"><img slot="image" src="neuron.gif"></z-spot>
       </div>
      </div>
   </z-view>

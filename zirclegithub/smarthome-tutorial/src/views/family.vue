@@ -7,10 +7,10 @@
        <z-spot button
         :angle="-90"
         size="s"
-        :style="active === 0 ? 'border-color: purple; color: purple;' : ''"
+        :style="active === 0 ? 'border-color: white; color: white;' : ''"
         label="Whitelake Technology"
         label-pos="top"
-        @click.native="showMe(0, 'purple')">
+        @click.native="showMe(0, 'white')">
         <i class="fas fa-building"></i>
       </z-spot>
       <z-spot button
@@ -25,8 +25,8 @@
         :angle="150"
         size="s"
         label="Railway station"
-        :style="active === 2 ? 'border-color: orange; color: orange;' : ''"
-        @click.native="showMe(2, 'orange')">
+        :style="active === 2 ? 'border-color: #05eb93; color: #05eb93;' : ''"
+        @click.native="showMe(2, '#05eb93')">
         <i class="fas fa-train"></i>
       </z-spot>
     </section>
@@ -69,7 +69,7 @@ export default {
   },
   mounted () {
     this.initMap();
-    tis.initMarkers();
+    this.initMarkers();
   }
 }
 </script>
