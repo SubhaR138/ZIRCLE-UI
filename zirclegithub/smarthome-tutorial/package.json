@@ -21,7 +21,7 @@
     "geolocation": "^0.2.0",
     "js-search": "^1.4.3",
     "leaflet": "^1.6.0",
-    "smoothie": "^1.35.0",
+    "smoothie": "^1.36.1",
     "vue": "^2.6.10",
     "vue-browser-geolocation": "^1.8.0",
     "vue-moment": "^4.1.0",
